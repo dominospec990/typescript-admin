@@ -3,6 +3,7 @@ import { Dashboard } from '../features/misc/routes/Dashboard';
 import { Navigate, Outlet } from 'react-router-dom';
 import SidebarLayout from '../components/Layout/Sidebar';
 import { ProSidebarProvider } from 'react-pro-sidebar';
+import Team from '../features/team/routes';
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ export const protectedRoutes = [
     element: <App />,
     children: [
       { index: true, element: <Dashboard /> },
-      { path: 'team', element: <Dashboard /> },
+      { path: 'team', element: <Team /> },
       { path: '*', element: <Navigate to="." /> },
     ],
   },
