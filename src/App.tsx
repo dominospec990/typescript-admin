@@ -1,6 +1,6 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { useMode, ColorModeContext } from './assets/theme/theme';
-import MainLayout from './components/Layout/MainLayout';
+import { AppRoutes } from './routes/index';
 
 function App() {
   const { theme, colorMode } = useMode();
@@ -9,9 +9,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
-          <main className="content">
-            <MainLayout />
-          </main>
+          <AppRoutes />
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
