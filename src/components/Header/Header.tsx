@@ -6,7 +6,7 @@ type HeaderProps = {
   subtitle: string;
 };
 
-const Header = ({ title, subtitle }: HeaderProps) => {
+export const Header = ({ title, subtitle }: HeaderProps) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
@@ -18,5 +18,3 @@ const Header = ({ title, subtitle }: HeaderProps) => {
     </Box>
   );
 };
-
-export default Header;
