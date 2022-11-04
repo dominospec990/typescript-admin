@@ -10,6 +10,7 @@ import Invoices from 'features/invoices/routes/Invoices';
 import React from 'react';
 import { Calendar } from 'features/calendar';
 import { FAQ } from 'features/faq';
+import { Bar } from 'features/bar/routes';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ export const protectedRoutes = [
       { path: 'form', element: <FormFeature /> },
       { path: 'calendar', element: <Calendar /> },
       { path: 'faq', element: <FAQ /> },
+      { path: 'bar', element: <Bar /> },
       { path: '*', element: <Navigate to="." /> },
     ],
   },
