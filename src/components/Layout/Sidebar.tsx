@@ -93,7 +93,7 @@ const SidebarLayout = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINSY
+                  HILDR
                 </Typography>
                 <IconButton
                   onClick={() => {

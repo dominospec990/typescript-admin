@@ -7,7 +7,9 @@
     "@emotion/styled": "^11.10.4",
     "@fullcalendar/core": "^5.11.3",
     "@fullcalendar/daygrid": "^5.11.3",
+    "@fullcalendar/interaction": "^5.11.3",
     "@fullcalendar/list": "^5.11.3",
+    "@fullcalendar/react": "^5.11.2",
     "@fullcalendar/timegrid": "^5.11.3",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.11",
@@ -41,12 +43,21 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": ["react-app"],
+    "extends": [
+      "react-app"
+    ],
     "settings": {
       "import/resolver": {
-        "node": {          
-          "paths": ["src"],
-          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "node": {
+          "paths": [
+            "src"
+          ],
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ]
         }
       }
     }

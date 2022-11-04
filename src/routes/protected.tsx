@@ -1,13 +1,15 @@
 import { MainLayout } from 'components/Layout';
-import { Dashboard } from '../features/misc/routes/Dashboard';
+import { Dashboard } from 'features/misc/routes/Dashboard';
 import { Navigate, Outlet } from 'react-router-dom';
-import SidebarLayout from '../components/Layout/Sidebar';
+import SidebarLayout from 'components/Layout/Sidebar';
 import { ProSidebarProvider } from 'react-pro-sidebar';
-import Team from '../features/team/routes/Team';
-import Contacts from '../features/contacts/routes/Contacts';
-import FormFeature from '../features/form/routes/Form';
-import Invoices from '../features/invoices/routes/Invoices';
+import Team from 'features/team/routes/Team';
+import Contacts from 'features/contacts/routes/Contacts';
+import FormFeature from 'features/form/routes/Form';
+import Invoices from 'features/invoices/routes/Invoices';
 import React from 'react';
+import { Calendar } from 'features/calendar';
+import { FAQ } from 'features/faq';
 
 const App = () => {
   return (
@@ -30,6 +32,8 @@ export const protectedRoutes = [
       { path: 'contacts', element: <Contacts /> },
       { path: 'invoices', element: <Invoices /> },
       { path: 'form', element: <FormFeature /> },
+      { path: 'calendar', element: <Calendar /> },
+      { path: 'faq', element: <FAQ /> },
       { path: '*', element: <Navigate to="." /> },
     ],
   },
