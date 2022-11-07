@@ -8,7 +8,7 @@ export interface StatBoxProps {
   subtitle: string;
   icon: React.ReactNode;
   progress: number;
-  increase: number;
+  increase: string;
 }
 
 export const StatBox = ({
@@ -21,13 +21,18 @@ export const StatBox = ({
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
-    <Box>
-      <Box>
-        {icon}
-        <Typography variant="h4">{title}</Typography>
+    <Box width="100%" m="0 30px">
+      <Box display="flex" justifyContent="space-between">
+        <Box>
+          {icon}
+
+          <Typography variant="h4">{title}</Typography>
+        </Box>
+        <Box>
+          <ProgressCircle progress={progress} />
+        </Box>
       </Box>
-      <ProgressCircle progress={progress} />
-      <Box>
+      <Box display="flex" justifyContent="space-between" mt="5px">
         <Typography variant="h5">{subtitle}</Typography>
         <Typography>{increase}</Typography>
       </Box>
