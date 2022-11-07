@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { LineChart } from 'components/Line Chart/index';
+import { LineChart } from 'components/LineChart/index';
 
 export const Line = () => {
   return (

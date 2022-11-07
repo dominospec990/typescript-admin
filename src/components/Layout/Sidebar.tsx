@@ -59,6 +59,7 @@ const SidebarLayout = () => {
         height: '100%',
         '& .sidebar': {
           background: `${colors.primary[400]} !important`,
+          borderRight: `${colors.primary[400]} !important`,
         },
         '& .sidebar-inner': {
           backgroundColor: 'transparent !important',
@@ -93,7 +94,7 @@ const SidebarLayout = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  HILDR
+                  hildr
                 </Typography>
                 <IconButton
                   onClick={() => {

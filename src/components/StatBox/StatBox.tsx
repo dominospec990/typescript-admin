@@ -1,7 +1,7 @@
 import { Box, Typography, useTheme } from '@mui/material';
 
 import { tokens } from 'assets/theme/theme';
-import { ProgressCircle } from '../Progress_Circle/ProgressCircle';
+import { ProgressCircle } from '../ProgressCircle/ProgressCircle';
 
 export interface StatBoxProps {
   title: string;

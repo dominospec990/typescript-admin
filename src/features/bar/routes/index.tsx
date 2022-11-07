@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { BarChart } from 'components/Bar_Chart';
+import { BarChart } from 'components/BarChart';
 
 export const Bar = () => {
   return (

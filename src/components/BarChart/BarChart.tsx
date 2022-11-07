@@ -105,6 +105,7 @@ export const BarChart = ({ isDashboard = false }) => {
         legendPosition: 'middle',
         legendOffset: -40,
       }}
+      enableLabel={isDashboard ? false : true}
       labelSkipWidth={12}
       labelSkipHeight={12}
       labelTextColor={{
@@ -136,7 +137,7 @@ export const BarChart = ({ isDashboard = false }) => {
         },
       ]}
       role="application"
-      ariaLabel="Nivo bar chart demo"
+      ariaLabel="bar chart"
       barAriaLabel={function (e) {
         return e.id + ': ' + e.formattedValue + ' in country: ' + e.indexValue;
       }}

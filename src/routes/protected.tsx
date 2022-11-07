@@ -12,6 +12,7 @@ import { Calendar } from 'features/calendar';
 import { FAQ } from 'features/faq';
 import { Bar } from 'features/bar/routes';
 import { Line } from 'features/line/index';
+import { Geography } from 'features/geography';
 
 const App = () => {
   return (
@@ -38,8 +39,8 @@ export const protectedRoutes = [
       { path: 'faq', element: <FAQ /> },
       { path: 'bar', element: <Bar /> },
       { path: 'line', element: <Line /> },
+      { path: 'geography', element: <Geography /> },
       // { path: 'pie', element: <Pie /> },
-      // { path: 'geography', element: <Geography /> },
       { path: '*', element: <Navigate to="." /> },
     ],
   },
