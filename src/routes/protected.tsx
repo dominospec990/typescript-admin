@@ -13,6 +13,7 @@ import { FAQ } from 'features/faq';
 import { Bar } from 'features/bar/routes';
 import { Line } from 'features/line/index';
 import { Geography } from 'features/geography';
+import { Pie } from '../features/pie';
 
 const App = () => {
   return (
@@ -40,7 +41,7 @@ export const protectedRoutes = [
       { path: 'bar', element: <Bar /> },
       { path: 'line', element: <Line /> },
       { path: 'geography', element: <Geography /> },
-      // { path: 'pie', element: <Pie /> },
+      { path: 'pie', element: <Pie /> },
       { path: '*', element: <Navigate to="." /> },
     ],
   },
