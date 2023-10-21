@@ -7,7 +7,6 @@ import Team from 'features/team/routes/Team';
 import Contacts from 'features/contacts/routes/Contacts';
 import FormFeature from 'features/form/routes/Form';
 import Invoices from 'features/invoices/routes/Invoices';
-import React from 'react';
 import { Calendar } from 'features/calendar';
 import { FAQ } from 'features/faq';
 import { Bar } from 'features/bar/routes';

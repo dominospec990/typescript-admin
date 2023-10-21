@@ -2,7 +2,21 @@ import * as React from 'react';
 import { createTheme } from '@mui/material/styles';
 import { PaletteMode } from '@mui/material';
 
-// Color Design Tokens
+
+// white: {
+//     100: "#f9f9f9",
+//     200: "#f3f3f3",
+//     300: "#ececec",
+//     400: "#e6e6e6",
+//     500: "#e0e0e0",
+//     600: "#b3b3b3",
+//     700: "#868686",
+//     800: "#5a5a5a",
+//     900: "#2d2d2d"
+// },
+
+// Color Design Tokens - ALL COLORS THAT WILL BE USED
+// tokens function accepts mode that represents light or dark mode and exports object given parameter passed in
 export const tokens = (mode: PaletteMode) => ({
   ...(mode === 'dark'
     ? {
