@@ -3,7 +3,7 @@ import { tokens } from '../../assets/theme/theme';
 
 type HeaderProps = {
   title: string;
-  subtitle: string;
+  subtitle?: string;
 };
 
 export const Header = ({ title, subtitle }: HeaderProps) => {

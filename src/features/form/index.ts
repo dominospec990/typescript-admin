@@ -1,1 +1,1 @@
-export * from './routes/Form';
+export * from './routes/index';

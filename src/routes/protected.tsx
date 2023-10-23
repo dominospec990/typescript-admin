@@ -5,7 +5,7 @@ import SidebarLayout from 'components/Layout/Sidebar';
 import { ProSidebarProvider } from 'react-pro-sidebar';
 import Team from 'features/team/routes/Team';
 import Contacts from 'features/contacts/routes/Contacts';
-import FormFeature from 'features/form/routes/Form';
+import Form from 'features/form/routes';
 import Invoices from 'features/invoices/routes/Invoices';
 import { Calendar } from 'features/calendar';
 import { FAQ } from 'features/faq';
@@ -34,7 +34,7 @@ export const protectedRoutes = [
       { path: 'team', element: <Team /> },
       { path: 'contacts', element: <Contacts /> },
       { path: 'invoices', element: <Invoices /> },
-      { path: 'form', element: <FormFeature /> },
+      { path: 'form', element: <Form /> },
       { path: 'calendar', element: <Calendar /> },
       { path: 'faq', element: <FAQ /> },
       { path: 'bar', element: <Bar /> },

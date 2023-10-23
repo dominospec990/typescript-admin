@@ -1,6 +1,6 @@
-import { CssBaseline, ThemeProvider } from '@mui/material';
-import { useMode, ColorModeContext } from './assets/theme/theme';
-import { AppRoutes } from './routes/index';
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { useMode, ColorModeContext } from "./assets/theme/theme";
+import { AppRoutes } from "./routes/index";
 
 function App() {
   const { theme, colorMode } = useMode();
